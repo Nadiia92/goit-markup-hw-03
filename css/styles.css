@@ -1,0 +1,237 @@
+            /* цвет основного текста #757575 */
+            /* вторичный текст текста #212121 */
+            /* акцент #2196F3 */
+            /* белый #FFFFFF */
+            /* вторичный цвет фона #F5F4FA  */
+            
+             :root {
+                --primary-text-color: #757575;
+                --title-text-color: #212121;
+                --accent-color: #2196F3;
+                --accent-white-color: #ffffff;
+                --header-studio-color: #000000;
+                --footer-link-color: rgba(255, 255, 255, 0.6);
+                --hero-background-color: #2F303A;
+                --secondary-background-color: #F5F4FA;
+                --hero-hover-color: #188CE8;
+                --primary-font-weight: 400;
+                --secondary-font-weight: 700;
+                --header-font-weight: 500;
+                --hero-font-weight: 900;
+                --primary-font-size: 14px;
+                --secondary-font-size: 16px;
+                --logo-font-size: 26px;
+                --hero-font-size: 44px;
+                --title-font-size: 36px;
+                --image-title-font-size: 18px;
+                --primary-line-height: 1.14x;
+                --secondary-line-height: 1.71x;
+                --tertiary-line-height: 1.62x;
+                --logo-line-height: 1.19x;
+                --hero-line-height: 1.36x;
+                --hero-button-line-height: 1.87x;
+                --h2-line-height: 1.16x;
+                --h3-line-height: 1.18x;
+                --image-title-line-height: 2.0x;
+                --primary-letter-spacing: 0.03em;
+                --header-letter-spacing: 0.02em;
+                --hero-letter-spacing: 0.06em;
+            }
+            
+            body {
+                background-color: var(--primary-background-color);
+                color: var(--primary-text-color);
+                font-family: Roboto, sans-serif;
+                font-weight: var(--primary-font-weight);
+                font-size: var(--primary-font-size);
+                line-height: var(--primary-line-height);
+                letter-spacing: var(--primary-letter-spacing);
+            }
+            /* Стили для index.html */
+            
+            ul {
+                list-style: none;
+            }
+            
+            .logo {
+                font-family: Raleway, sans-serif;
+                font-weight: var(--secondary-font-weight);
+                font-size: var(--logo-font-size);
+                line-height: var(--logo-line-height);
+                text-decoration: none;
+            }
+            
+            .logo .web {
+                color: var(--accent-color);
+            }
+            
+            .logo .studio-header {
+                color: var(--header-studio-color);
+            }
+            
+            .logo .studio-footer {
+                color: var(--accent-white-color);
+            }
+            /* header */
+            
+            .site-nav .link {
+                color: var(--title-text-color);
+                font-weight: var(--header-font-weight);
+                letter-spacing: var(--header-letter-spacing);
+                text-decoration: none;
+            }
+            
+            .site-nav .link:hover,
+            .site-nav .link:focus {
+                color: var(--accent-color);
+            }
+            
+            .site-nav .link.current {
+                color: var(--accent-color);
+            }
+            
+            .mail-tel .link {
+                color: var(--primary-text-color);
+                font-weight: var(--header-font-weight);
+                letter-spacing: var(--header-letter-spacing);
+                text-decoration: none;
+            }
+            
+            .mail-tel .link:hover,
+            .mail-tel .link:focus {
+                color: var(--accent-color);
+            }
+            /* hero */
+            
+            .hero {
+                background-color: var(--hero-background-color);
+            }
+            
+            .hero-title {
+                color: var(--accent-white-color);
+                font-weight: var(--hero-font-weight);
+                font-size: var(--hero-font-size);
+                line-height: var(--hero-line-height);
+                text-align: center;
+                letter-spacing: var(--hero-letter-spacing);
+            }
+            
+            .hero-button {
+                color: var(--accent-white-color);
+                background-color: var(--accent-color);
+                font-weight: var(--secondary-font-weight);
+                font-size: var(--secondary-font-size);
+                line-height: var(--hero-button-line-height);
+                text-align: center;
+                letter-spacing: var(--hero-letter-spacing);
+                font-family: inherit;
+                cursor: pointer;
+                border-style: none;
+            }
+            
+            .hero-button:hover,
+            .hero-button:focus {
+                background-color: var(--hero-hover-color);
+            }
+            /* section */
+            
+            .section-title {
+                color: var(--title-text-color);
+                font-weight: var(--secondary-font-weight);
+                font-size: var(--title-font-size);
+                line-height: var(--h2-line-height);
+                text-align: center;
+            }
+            /* features */
+            
+            .features .title {
+                color: var(--title-text-color);
+                font-weight: var(--secondary-font-weight);
+                font-size: var(--primary-font-size);
+            }
+            
+            .features .text {
+                line-height: var(--secondary-line-height);
+            }
+            /* our command */
+            
+            .section-command {
+                background-color: var(--secondary-background-color);
+            }
+            
+            .section-command .name {
+                color: var(--title-text-color);
+                font-weight: var(--header-font-weight);
+                font-size: var(--secondary-font-size);
+                line-height: var(--h3-line-height);
+                text-align: center;
+            }
+            
+            .section-command .profession {
+                font-size: var(--secondary-font-size);
+                line-height: var(--h3-line-height);
+                text-align: center;
+            }
+            
+            .section-command .figure {
+                background-color: var(--accent-white-color);
+            }
+            /* footer */
+            
+            .footer {
+                background-color: var(--hero-background-color);
+                line-height: var(--secondary-line-height);
+            }
+            
+            .address {
+                color: var(--accent-white-color);
+                font-style: normal;
+            }
+            
+            .address .link {
+                color: var(--footer-link-color);
+                text-decoration: none;
+            }
+            
+            .address .link:hover,
+            .address .link:focus {
+                color: var(--accent-color);
+            }
+            /* Стили для Портфолио */
+            /* button */
+            
+            .button {
+                color: var(--title-text-color);
+                background-color: var(--secondary-background-color);
+                font-weight: var(--header-font-weight);
+                font-size: var(--secondary-font-size);
+                line-height: var(--tertiary-line-height);
+                text-align: center;
+                font-family: inherit;
+                cursor: pointer;
+                border-style: none;
+            }
+            
+            .button:hover,
+            .button:focus {
+                color: var(--accent-white-color);
+                background-color: var(--accent-color);
+            }
+            
+            .image-title {
+                color: var(--title-text-color);
+                font-weight: var(--secondary-font-weight);
+                font-size: var(--image-title-font-size);
+                line-height: var(--image-title-line-height);
+                letter-spacing: var(--hero-letter-spacing);
+            }
+            
+            .image-description {
+                color: var(--primary-text-color);
+                font-size: var(--secondary-font-size);
+                line-height: var(--hero-button-line-height);
+            }
+            
+            .work-section .link {
+                text-decoration: none;
+            }
