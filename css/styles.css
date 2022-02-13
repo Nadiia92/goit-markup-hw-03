@@ -37,6 +37,15 @@
                 --header-letter-spacing: 0.02em;
                 --hero-letter-spacing: 0.06em;
             }
+            /* html {
+                box-sizing: border-box;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            } */
             
             body {
                 background-color: var(--primary-background-color);
@@ -51,6 +60,19 @@
             
             ul {
                 list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            h1,
+            h2,
+            h3 {
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
             }
             
             .logo {
@@ -101,22 +123,34 @@
             .mail-tel .link:focus {
                 color: var(--accent-color);
             }
+            
+            .container {
+                width: 1200px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0, auto;
+                outline: 2px solid tomato;
+            }
             /* hero */
             
             .hero {
+                margin-bottom: 94px;
                 background-color: var(--hero-background-color);
+                text-align: center;
             }
             
             .hero-title {
+                margin-bottom: 30px;
                 color: var(--accent-white-color);
                 font-weight: var(--hero-font-weight);
                 font-size: var(--hero-font-size);
                 line-height: var(--hero-line-height);
-                text-align: center;
                 letter-spacing: var(--hero-letter-spacing);
             }
             
             .hero-button {
+                border-radius: 4px;
+                padding: 10px 32px;
                 color: var(--accent-white-color);
                 background-color: var(--accent-color);
                 font-weight: var(--secondary-font-weight);
@@ -136,15 +170,22 @@
             /* section */
             
             .section-title {
+                margin-bottom: 50px;
                 color: var(--title-text-color);
                 font-weight: var(--secondary-font-weight);
                 font-size: var(--title-font-size);
                 line-height: var(--h2-line-height);
                 text-align: center;
+                outline: 2px solid tomato;
             }
             /* features */
             
+            .features-section {
+                margin-bottom: 94px;
+            }
+            
             .features .title {
+                margin-bottom: 10px;
                 color: var(--title-text-color);
                 font-weight: var(--secondary-font-weight);
                 font-size: var(--primary-font-size);
@@ -153,13 +194,20 @@
             .features .text {
                 line-height: var(--secondary-line-height);
             }
+            /* our work */
+            
+            .section-work {
+                margin-bottom: 94px;
+            }
             /* our command */
             
             .section-command {
                 background-color: var(--secondary-background-color);
+                margin-bottom: 94px;
             }
             
             .section-command .name {
+                margin-bottom: 10px;
                 color: var(--title-text-color);
                 font-weight: var(--header-font-weight);
                 font-size: var(--secondary-font-size);
@@ -201,6 +249,9 @@
             /* button */
             
             .button {
+                border-radius: 4px;
+                padding: 6px 22px;
+                display: inline-block;
                 color: var(--title-text-color);
                 background-color: var(--secondary-background-color);
                 font-weight: var(--header-font-weight);
