@@ -32,15 +32,15 @@
     --hero-font-size: 44px;
     --title-font-size: 36px;
     --image-title-font-size: 18px;
-    --primary-line-height: 1.14x;
-    --secondary-line-height: 1.71x;
-    --tertiary-line-height: 1.62x;
-    --logo-line-height: 1.19x;
-    --hero-line-height: 1.36x;
-    --hero-button-line-height: 1.87x;
-    --h2-line-height: 1.16x;
-    --h3-line-height: 1.18x;
-    --image-title-line-height: 2.0x;
+    --primary-line-height: 1.14;
+    --secondary-line-height: 1.71;
+    --tertiary-line-height: 1.62;
+    --logo-line-height: 1.19;
+    --hero-line-height: 1.36;
+    --hero-button-line-height: 1.87;
+    --h2-line-height: 1.16;
+    --h3-line-height: 1.18;
+    --image-title-line-height: 2.0;
     --primary-letter-spacing: 0.03em;
     --header-letter-spacing: 0.02em;
     --hero-letter-spacing: 0.06em;
@@ -191,6 +191,7 @@ img {
 .hero {
     background-color: var(--hero-background-color);
     padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -207,7 +208,6 @@ img {
 }
 
 .hero-button {
-    margin-bottom: 200px;
     border-radius: 4px;
     padding: 10px 32px;
     color: var(--accent-white-color);
@@ -253,6 +253,10 @@ img {
 
 .features-list {
     display: flex;
+}
+
+.features-list .item {
+    width: 270px;
 }
 
 .features-list .item+.item {
@@ -316,7 +320,7 @@ img {
 }
 
 .command .description {
-    padding: 30px 59px 30px 60px;
+    padding: 30px 32px 30px 32px;
 }
 
 
@@ -334,16 +338,12 @@ img {
     font-style: normal;
 }
 
-.address .item {
-    margin-bottom: 9px;
-}
-
 .address .item+.item {
     margin-top: 9px;
 }
 
-.footer .list {
-    margin-top: 20px;
+.address {
+    padding-top: 20px;
 }
 
 .address .link {
@@ -405,8 +405,7 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px;
-    padding-bottom: 20px;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
 }
 
 .list-filter .item:nth-child(3n) {
@@ -419,6 +418,9 @@ img {
 
 .list-filter .description {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .image-title {
